@@ -1,0 +1,66 @@
+.heading {
+    display: flex;
+    flex-direction: row;
+}
+
+.category {
+    overflow: visible;
+}
+
+.catheading {
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.categorybox {
+    display: flex;
+    flex-direction: column;
+    height: 91vh;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.categorybox::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.categorybox::-webkit-scrollbar-track {
+    background: var(--background-color);
+    border-radius: 10px;
+}
+
+.categorybox::-webkit-scrollbar-thumb {
+    background: var(--alt-color);
+}
+
+.categorybox::-webkit-scrollbar-thumb:hover {
+    background: var(--text2-color);
+}
+
+.caticon {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+.line {
+    margin: 0;
+}
+
+.menubutton {
+    font-size: 14px;
+    color: var(--text2-color);
+    font-weight: 500;
+    margin-right: 20px;
+    padding: 0;
+    color: var(--text2-color);
+    cursor: pointer;
+}
+
+.active {
+    font-weight: 500;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+}

@@ -1,0 +1,68 @@
+.subsbox {
+    display: flex;
+    flex-direction: column;
+    height: 91vh;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.subsbox::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.subsbox::-webkit-scrollbar-track {
+    background: var(--background-color);
+    border-radius: 10px;
+}
+
+.subsbox::-webkit-scrollbar-thumb {
+    background: var(--alt-color);
+}
+
+.subsbox::-webkit-scrollbar-thumb:hover {
+    background: var(--text2-color);
+}
+
+.subsheading {
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.subsicon {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    filter: var(--image-filter);
+}
+
+.guestuser {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    top: 20%;
+    color: var(--text2-color);
+}
+
+.guestuser h2 {
+    margin: 0;
+}
+
+.guestuser .bigicon {
+    height: 130px;
+    margin: 10px;
+    filter: var(--image-filter);
+}
+
+.subs {
+    overflow: visible;
+}
+
+.time-box {
+    margin-bottom: 30px;
+    height: auto;
+}

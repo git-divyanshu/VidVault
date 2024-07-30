@@ -1,0 +1,72 @@
+.linkedbox {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.item {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: var(--alt-color);
+}
+
+.defaultimg {
+    width: 18px;
+    filter: var(--image-filter);
+}
+
+.profileimg {
+    width: 25px;
+    border-radius: 50%;
+}
+
+.item p {
+    margin: 0;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.hiddenimg {
+    width: 18px;
+    filter: var(--image-filter);
+}
+
+.hiddenitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48px;
+    padding-top: 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.hiddenitem p {
+    padding: 2px;
+    font-size: 10px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.hiddenitem:hover {
+    cursor: pointer;
+    background-color: var(--alt-color);
+}
+
+.selected {
+    background-color: var(--alt-color);
+}
+
+.selected:hover {
+    background-color: rgb(95, 95, 95);
+}

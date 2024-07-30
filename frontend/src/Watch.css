@@ -1,0 +1,160 @@
+.watchpage {
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+}
+
+.vplayer {
+    height: 91vh;
+    width: 950px;
+}
+
+.watchpage::-webkit-scrollbar {
+    display: none;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    justify-content: space-between;
+}
+
+.boxpart1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.namensubs p {
+    margin: 0;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.namensubs b {
+    color: var(--text-color);
+}
+
+.title {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.channelicon {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Buttons */
+
+.subscribe {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 300;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.subscribe:hover {
+    background-color: var(--alt-color);
+    color: var(--text-color);
+}
+
+.ed {
+    background-color: var(--text2-color);
+    color: var(--background-color);
+}
+
+.ed:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.like_btn {
+    background-color: var(--alt-color);
+    color: var(--text-color);
+    border: none;
+    border-right: 1px solid var(--text-color);
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 20px 0 0 20px;
+    font-size: 13px;
+    font-weight: 300;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.dislike_btn {
+    background-color: var(--alt-color);
+    color: var(--text-color);
+    border: none;
+    height: 40px;
+    padding: 0 10px;
+    margin-right: 5px;
+    border-radius: 0 20px 20px 0;
+    font-size: 13px;
+    font-weight: 300;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.like_btn:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.dislike_btn:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.share_btn {
+    background-color: var(--alt-color);
+    color: var(--text-color);
+    border: none;
+    height: 40px;
+    padding: 0 10px;
+    margin-right: 5px;
+    width: 80px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 300;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.download_btn {
+    background-color: var(--alt-color);
+    color: var(--text-color);
+    border: none;
+    height: 40px;
+    width: 100px;
+    padding: 0 10px;
+    margin-right: 5px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.share_btn:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.download_btn:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+button img {
+    height: 17px;
+    vertical-align: middle;
+    filter: var(--image-filter);
+    margin-right: 3px;
+}

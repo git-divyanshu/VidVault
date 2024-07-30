@@ -1,0 +1,75 @@
+.historycards {
+    overflow-y: visible;
+    height: fit-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    gap: 10px;
+    align-items: center;
+}
+
+.history-outerbox {
+    flex: 1;
+    height: 91vh;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.history-outerbox::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.history-outerbox::-webkit-scrollbar-track {
+    background: var(--background-color);
+    border-radius: 10px;
+}
+
+.history-outerbox::-webkit-scrollbar-thumb {
+    background: var(--alt-color);
+}
+
+.history-outerbox::-webkit-scrollbar-thumb:hover {
+    background: var(--text2-color);
+}
+.history-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.remove-history {
+    width: 50%;
+    top: 25%;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: var(--alt-color);
+}
+
+.remove-history.show {
+    display: flex;
+}
+
+.remove-history:hover {
+    background-color: var(--background-color);
+}
+
+.remove-history img {
+    width: 30px;
+    filter: var(--image-filter);
+}
+
+.remove-history span {
+    margin-left: 20px;
+}

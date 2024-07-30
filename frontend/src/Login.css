@@ -1,0 +1,147 @@
+.login-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 91vh;
+}
+
+.form-box-logo {
+    width: 50px;
+    margin: 0;
+}
+
+.login-box .box-head {
+    font-size: 35px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.register-box .box-desc {
+    font-size: 18px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.form-box {
+    display: flex;
+    width: 60%;
+    height: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid var(--alt-color);
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputdata {
+    width: 100%;
+}
+
+.form-box input,
+.form-box textarea {
+    width: 60vh;
+    height: 4vh;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background-color: var(--alt-color);
+    color: var(--text-color);
+    border-radius: 5px;
+}
+
+.form-box .invalid {
+    border: 1px solid var(--error-msg);
+}
+
+.form-box select {
+    width: 60vh;
+    height: 6vh;
+    border: none;
+    padding-left: 10px;
+    appearance: none;
+    background-color: var(--alt-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+}
+
+.form-box input::placeholder,
+.form-box textarea::placeholder {
+    color: var(--text-color);
+}
+
+.form-box .valid:focus,
+.form-box select:focus {
+    outline: 1px solid var(--highlight-color);
+}
+
+.form-box .invalid:focus {
+    outline: 1px solid var(--error-msg);
+}
+
+.form-box button {
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+    cursor: pointer;
+}
+.form-box button:hover {
+    background-color: var(--text2-color);
+    color: var(--background-color);
+}
+
+.login-ques {
+    color: var(--text2-color);
+    font-size: 13px;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.login-ques:hover {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.error {
+    color: var(--error-msg);
+    width: 60vh;
+    font-size: 13px;
+    padding-left: 20px;
+    margin: 0;
+    text-wrap: balance;
+}
+
+.pass-eye-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pass-eye {
+    position: relative;
+    left: -40px;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    filter: var(--image-filter);
+    cursor: pointer;
+}

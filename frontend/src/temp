@@ -1,0 +1,147 @@
+<div className="playback_speed">
+                                <button
+                                    className="control-btn"
+                                    onClick={() => {
+                                        showPlaybackspeed
+                                            ? setShowPlaybackspeed(false)
+                                            : setShowPlaybackspeed(true);
+                                    }}
+                                >
+                                    <img
+                                        src="https://cdn-icons-png.flaticon.com/128/53/53128.png"
+                                        alt="playback_speed"
+                                    />
+                                </button>
+                                {showPlaybackspeed ? (
+                                    <div className="option-box">
+                                        <div
+                                            className="options"
+                                            onClick={() => {
+                                                handleSpeedChange(0.25);
+                                            }}
+                                        >
+                                            0.25
+                                        </div>
+                                        <div
+                                            className="options"
+                                            onClick={() => {
+                                                handleSpeedChange(0.5);
+                                            }}
+                                        >
+                                            0.5
+                                        </div>
+                                        <div
+                                            className="options"
+                                            onClick={() => {
+                                                handleSpeedChange(0.75);
+                                            }}
+                                        >
+                                            0.75
+                                        </div>
+                                        <div
+                                            className="options"
+                                            onClick={() => {
+                                                handleSpeedChange(1.0);
+                                            }}
+                                        >
+                                            Normal
+                                        </div>
+                                        <div
+                                            className="options"
+                                            onClick={() => {
+                                                handleSpeedChange(1.25);
+                                            }}
+                                        >
+                                            1.25
+                                        </div>
+                                        <div
+                                            className="options"
+                                            onClick={() => {
+                                                handleSpeedChange(1.5);
+                                            }}
+                                        >
+                                            1.5
+                                        </div>
+                                        <div
+                                            className="options"
+                                            onClick={() => {
+                                                handleSpeedChange(1.75);
+                                            }}
+                                        >
+                                            1.75
+                                        </div>
+                                        <div
+                                            className="options"
+                                            onClick={() => {
+                                                handleSpeedChange(2.0);
+                                            }}
+                                        >
+                                            2
+                                        </div>
+                                        <div
+                                            className="options"
+                                            onClick={() => {
+                                                handleSpeedChange(2.5);
+                                            }}
+                                        >
+                                            2.5
+                                        </div>
+                                        <div
+                                            className="options"
+                                            onClick={() => {
+                                                handleSpeedChange(3.0);
+                                            }}
+                                        >
+                                            3
+                                        </div>
+                                    </div>
+                                ) : null}
+                            </div>
+                            <div className="video_quality">
+                                <button
+                                    className="control-btn"
+                                    onClick={() => {
+                                        showQualitychange
+                                            ? setShowQualitychange(false)
+                                            : setShowQualitychange(true);
+                                    }}
+                                >
+                                    <img
+                                        src="https://cdn-icons-png.flaticon.com/128/70/70115.png"
+                                        alt="quality-change"
+                                    />
+                                </button>
+                                {showQualitychange ? (
+                                    <div className="option-box">
+                                        {params.qualityoptions
+                                            .slice()
+                                            .reverse()
+                                            .map((option) => (
+                                                <div
+                                                    key={option}
+                                                    onClick={() => {
+                                                        params.handleQualityChange(
+                                                            option
+                                                        );
+                                                        setIsPlaying(false);
+                                                    }}
+                                                    className="options"
+                                                >
+                                                    {params.qualityoptions
+                                                        .length > 1
+                                                        ? option + "p"
+                                                        : option}
+                                                </div>
+                                            ))}
+                                        <div
+                                            onClick={() => {
+                                                params.handleQualityChange(0);
+                                                setIsPlaying(false);
+                                            }}
+                                            className="options"
+                                        >
+                                            Auto
+                                        </div>
+                                    </div>
+                                ) : null}
+                            </div>

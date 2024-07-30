@@ -1,0 +1,66 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-wrap: wrap;
+    user-select: none;
+}
+
+.menuncontent {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.menu {
+    width: auto;
+}
+
+.content {
+    margin-left: 50px;
+    width: 100%;
+}
+
+/* Guest user */
+
+.guestuserp {
+    color: var(--text-color);
+    font-size: 15px;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+.menuguestuser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+.sign_in {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--alt-color);
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.sign_in:hover {
+    border: 1px solid var(--highlight-color);
+}
+
+.guesticon {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    filter: var(--image-filter);
+}

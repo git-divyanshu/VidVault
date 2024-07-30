@@ -1,0 +1,47 @@
+.Menu {
+    height: 91vh;
+    width: 100%;
+    overflow-y: scroll;
+    margin-left: 10px;
+}
+
+.Menu::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.Menu:hover::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.Menu:hover::-webkit-scrollbar-track {
+    background: var(--background-color);
+    border-radius: 10px;
+}
+
+.Menu:hover::-webkit-scrollbar-thumb {
+    background: var(--alt-color);
+}
+
+.Menu:hover::-webkit-scrollbar-thumb:hover {
+    background: var(--text2-color);
+}
+
+.menudiv {
+    margin-top: 5px;
+    border-bottom: 1px solid var(--alt-color);
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.HiddenMenu {
+    padding: 0;
+}
+
+.blabla {
+    font-size: 12px;
+    color: var(--text2-color);
+}

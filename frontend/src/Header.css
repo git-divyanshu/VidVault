@@ -1,0 +1,241 @@
+.head {
+    box-sizing: border-box;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    padding: 5px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+.iconntitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.iconntitle:hover {
+    cursor: pointer;
+}
+
+.iconntitle p {
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.iconntitle img {
+    width: 30px;
+}
+
+.toggle-menu {
+    height: 32px;
+    width: 32px;
+    border: none;
+    background-color: transparent;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.toggle-menu img {
+    width: 18px;
+    filter: var(--image-filter);
+}
+
+.toggle-menu:hover {
+    cursor: pointer;
+    background-color: var(--alt-color);
+    border-radius: 50%;
+}
+
+.youtube-btn {
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.search {
+    color: var(--text2-color);
+    width: 26%;
+    margin-top: 3px;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+
+.search input {
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 13px;
+    border: 1px solid var(--alt-color);
+    border-radius: 30px 0 0 30px;
+    background-color: var(--background-color);
+}
+
+.search input:focus {
+    outline: none;
+    border: 1px solid var(--highlight-color);
+}
+
+.search input::placeholder {
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.search button {
+    width: 60px;
+    height: 33.5px;
+    margin-top: 3px;
+    background-color: var(--background-color);
+    border: 1px solid var(--alt-color);
+    border-radius: 0 30px 30px 0;
+}
+
+.search button:hover {
+    cursor: pointer;
+    background-color: var(--alt-color);
+}
+
+.search form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.search img {
+    height: 25px;
+    filter: var(--image-filter);
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.login-profile {
+    text-decoration: none;
+}
+
+.sign_in {
+    text-decoration: none;
+}
+
+.create {
+    width: 20px;
+    margin-left: 20px;
+    padding: 6.5px;
+    border-radius: 50%;
+    filter: var(--image-filter);
+}
+
+.notifications {
+    width: 20px;
+    margin-left: 20px;
+    padding: 6px;
+    border-radius: 50%;
+    filter: var(--image-filter);
+}
+
+.profilepic {
+    border-radius: 50%;
+    margin-left: 20px;
+    width: 35px;
+}
+
+.profilepic:hover {
+    cursor: pointer;
+}
+
+.notifications:hover {
+    cursor: pointer;
+    background-color: #d9d6d6;
+}
+
+.header-guest-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.toogle-theme {
+    width: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    filter: var(--image-filter);
+}
+
+.toogle-theme:hover {
+    cursor: pointer;
+    background-color: #d9d6d6;
+}
+
+.create:hover {
+    cursor: pointer;
+    background-color: #d9d6d6;
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-width: 180px;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    z-index: 1;
+    border: 0.5px solid var(--alt-color);
+}
+
+.dropdown-menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    color: var(--text-color);
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.dropdown-menu-item-text {
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dropdown-menu-item-img {
+    width: 20px;
+    margin-left: 10px;
+    filter: var(--image-filter);
+}
+.dropdown-menu-item:hover {
+    background-color: var(--alt-color);
+}
+
+.profile-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.profile-box-img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.profile-box-text {
+    font-size: 11px;
+}
